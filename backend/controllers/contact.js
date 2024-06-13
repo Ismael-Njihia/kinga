@@ -24,6 +24,8 @@ const sendContact = asyncHandler(async (req, res) => {
     } catch (error) {
         res.status(500).json({ Message: "Failed to send email", error: error.message });
     }
+
+    console.log(email)
 });
 
 export {

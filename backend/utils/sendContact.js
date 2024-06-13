@@ -18,7 +18,7 @@ export const sendContact = async ({ fullName, email, topic, phone, message }) =>
         // Email options
         const mailOptions = {
             from: EMAIL,
-            to: 'ishmaelnjihia@gmail.com',
+            to: 'kavunyefransisca@gmail.com',
             subject: topic,
             html: `
                 <p>Hi Ishmael,</p>
