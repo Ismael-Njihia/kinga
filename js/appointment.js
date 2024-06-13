@@ -7,7 +7,10 @@ document.getElementById('submitBtn').addEventListener('click', async function(ev
     const time = document.getElementById('time').value;
     const message = document.getElementById('message').value;
 
-    console.log(message, "received!")
+    console.log(message, "received!");
+
+    // Show the spinner
+    document.getElementById('spinner').style.display = 'block';
 
     try {
         const response = await fetch('http://localhost:5000/api/booking', {
@@ -19,11 +22,11 @@ document.getElementById('submitBtn').addEventListener('click', async function(ev
         });
 
         const data = await response.json();
-        console.log(response)
-        console.log(data)
+        console.log(response);
+        console.log(data);
         if (response.ok) {
             alert('Booking submitted successfully!');
-            //navigate to ./confirmation.html
+            // Navigate to ./confirmation.html
             window.location.href = 'confirmation.html';
         } else {
             alert('Error: ' + data.Message);
@@ -31,5 +34,8 @@ document.getElementById('submitBtn').addEventListener('click', async function(ev
     } catch (error) {
         console.error('Error:', error);
         alert('An error occurred while submitting the booking.');
+    } finally {
+        // Hide the spinner
+        document.getElementById('spinner').style.display = 'none';
     }
 });

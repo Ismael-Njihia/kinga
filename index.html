@@ -9,6 +9,27 @@
 
   <title>Kinga wellness Healthcare center</title>
 
+  <style>
+	.spinner {
+		display: none;
+		width: 50px;
+		height: 50px;
+		border: 5px solid lightgray;
+		border-top: 5px solid blue;
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+</style>
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
 
@@ -347,6 +368,7 @@
                     </div>
 
                     <a class="btn btn-main btn-round-full" id="submitBtn" href="/confirmation.html"> Make Appoinment <i class="icofont-simple-right ml-2  "></i></a>
+					<div class="spinner" id="spinner"></div>
                 </form>
             </div>
 			</div>
