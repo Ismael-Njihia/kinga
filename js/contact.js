@@ -1,4 +1,4 @@
-document.getElementById('submitBtn').addEventListener('click', function(event) {
+document.getElementById('submitBtn').addEventListener('click', async function(event) {
     event.preventDefault(); // Prevent form submission
 
     const name = document.getElementById('name').value;
@@ -12,22 +12,32 @@ document.getElementById('submitBtn').addEventListener('click', function(event) {
     console.log('Subject:', subject);
     console.log('Phone:', phone);
     console.log('Message:', message);
-    // Send the data to the server
-    fetch('http://localhost:5000/api/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ fullName: name, email, topic: subject, phone, message })
 
-    }).then(response => {
+    // Show the spinner
+    document.getElementById('spinner').style.display = 'block';
+
+    try {
+        const response = await fetch('http://localhost:5000/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ fullName: name, email, topic: subject, phone, message })
+        });
+
         console.log(response);
         if (response.ok) {
             alert('Message sent successfully');
             window.location.href = 'confirmation.html';
         } else {
-            alert('An error occurred while sending the message');
+            const data = await response.json();
+            alert('An error occurred: ' + data.Message);
         }
-    })
-
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred while sending the message.');
+    } finally {
+        // Hide the spinner
+        document.getElementById('spinner').style.display = 'none';
+    }
 });
