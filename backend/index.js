@@ -1,6 +1,7 @@
 import express from "express"
 import dotenv from "dotenv"
 import bookingRoute from "./Routes/bookingRoute.js"
+import contactRoute from "./Routes/contactRoute.js"
 import cors from "cors"
 import path from "path"
 import { fileURLToPath } from 'url';
@@ -15,6 +16,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use("/api/booking", bookingRoute)
+app.use("/api/contact", contactRoute)
 app.use(express.static(path.join(__dirname, '..')));
 
 app.get('/', (req, res) => {
