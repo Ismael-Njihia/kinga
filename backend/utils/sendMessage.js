@@ -17,7 +17,7 @@ export const sendMessage = async({fullName, phoneNumber, day, time, Message}) =>
         // Email options
         const mailOptions = {
             from: EMAIL,
-            to: 'ishmaelnjihia@gmail.com',
+            to: 'kavunyefransisca@gmail.com',
             subject: 'New Booking from Your Website',
             html: `
                 <p>Hi Ishmael,</p>

@@ -26,6 +26,8 @@ const SendBooking = asyncHandler(async (req, res) => {
         Message: "Booking email sent successfully",
         Response: response
     });
+    console.log(fullName
+        )
 });
 
 export {
