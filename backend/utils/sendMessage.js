@@ -20,7 +20,7 @@ export const sendMessage = async({fullName, phoneNumber, day, time, Message}) =>
             to: 'kavunyefransisca@gmail.com',
             subject: 'New Booking from Your Website',
             html: `
-                <p>Hi Ishmael,</p>
+                <p>Hi Fransisca,</p>
                 <p>You have a new booking from your website</p>
                 <h3>Booking Details</h3>
                 <ul>
