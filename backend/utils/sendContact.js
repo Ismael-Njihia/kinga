@@ -21,7 +21,7 @@ export const sendContact = async ({ fullName, email, topic, phone, message }) =>
             to: 'kavunyefransisca@gmail.com',
             subject: topic,
             html: `
-                <p>Hi Fransisca,</p>
+                <p>Hi Kinga Ceragem!,</p>
                 <p>You have a new contact from your website</p>
                 <h3>Contact Details</h3>
                 <ul>
