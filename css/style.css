@@ -49,7 +49,7 @@ p {
 }
 
 .navbar-toggle .icon-bar {
-  background: #223a66;
+  background: #FF6347;
 }
 
 input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
@@ -61,7 +61,7 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
 
 input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
   box-shadow: none;
-  border: 1px solid #223a66;
+  border: 1px solid #FF6347;
 }
 
 .form-control {
@@ -71,7 +71,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #223a66;
+  border: 1px solid #FF6347;
 }
 
 .py-7 {
@@ -103,9 +103,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn-main {
-  background: #223a66;
+  background: #FF6347;
   color: #fff;
-  border-color: #223a66;
+  border-color: #FF6347;
 }
 
 .btn-main:hover {
@@ -121,21 +121,21 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn-main-2:hover {
-  background: #223a66;
+  background: #FF6347;
   color: #fff;
-  border-color: #223a66;
+  border-color: #FF6347;
 }
 
 .btn-solid-border {
-  border: 2px solid #223a66;
+  border: 2px solid #FF6347;
   background: transparent;
-  color: #223a66;
+  color: #FF6347;
 }
 
 .btn-solid-border:hover {
-  border: 2px solid #223a66;
+  border: 2px solid #FF6347;
   color: #fff;
-  background: #223a66;
+  background: #FF6347;
 }
 
 .btn-solid-border:hover.btn-icon i {
@@ -164,9 +164,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn-white:hover {
-  background: #223a66;
+  background: #FF6347;
   color: #fff;
-  border-color: #223a66;
+  border-color: #FF6347;
 }
 
 .btn-solid-white {
@@ -192,11 +192,14 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .bg-gray {
-  background: #eff0f3;
+  background: #FFDB58;
+}
+.gray-bg-me{
+  background-color: #f5f5f5;
 }
 
 .bg-primary {
-  background: #223a66;
+  background: #FFDB58;
 }
 
 .bg-primary-dark {
@@ -229,7 +232,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .subtitle {
-  color: #223a66;
+  color: #FF6347;
   font-size: 14px;
   letter-spacing: 1px;
 }
@@ -244,7 +247,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background: #223a66;
+  background: #FF6347;
 }
 
 .overly-2 {
@@ -331,11 +334,11 @@ a:focus {
 }
 
 .title-color {
-  color: #223a66;
+  color: #FF6347;
 }
 
 .secondary-bg {
-  background: #223a66;
+  background: #FF6347;
 }
 
 .section-title {
@@ -343,7 +346,7 @@ a:focus {
 }
 
 .section-title h2 {
-  color: #223a66;
+  color: #FF6347;
 }
 
 .text-lg {
@@ -424,7 +427,7 @@ a:focus {
 }
 
 .header-top-bar {
-  background: #223a66;
+  background: #FF6347;
   font-size: 14px;
   padding: 10px 0px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -471,7 +474,7 @@ a:focus {
   line-height: 1.2;
   letter-spacing: -1.2px;
   text-transform: capitalize;
-  color: #223a66;
+  color: #FF6347;
 }
 
 .letter-spacing {
@@ -479,7 +482,7 @@ a:focus {
 }
 
 .text-color {
-  color: #223a66;
+  color: #FF6347;
 }
 
 .text-color-2 {
@@ -557,7 +560,7 @@ a:focus {
   content: "";
   right: 10px;
   bottom: 20px;
-  background: #223a66;
+  background: #FF6347;
   padding: 48px;
 }
 
@@ -603,11 +606,11 @@ a:focus {
 
 .feature-item .feature-icon i {
   font-size: 50px;
-  color: #223a66;
+  color: #FF6347;
 }
 
 .feature-item h4 {
-  color: #223a66;
+  color: #FF6347;
 }
 
 .feature-item p {
@@ -780,7 +783,7 @@ a:focus {
 }
 
 .read-more {
-  color: #223a66;
+  color: #FF6347;
 }
 
 @media (max-width: 480px) {
@@ -831,7 +834,7 @@ a:focus {
 }
 
 .text-color-primary {
-  color: #223a66;
+  color: #FF6347;
 }
 
 .cta-section {
@@ -918,7 +921,7 @@ a:focus {
   border-radius: 100%;
   margin-right: 20px;
   margin-bottom: 30px;
-  border: 5px solid #eff0f3;
+  border: 5px solid red;
   margin-top: -5px;
 }
 
