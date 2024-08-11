@@ -10,7 +10,7 @@ export const sendMessage = async({fullName, phoneNumber, day, time, Message}) =>
         const EMAIL = process.env.EMAIL;
         const PASSWORD = process.env.PASSWORD;
 
-        const to = "ishmaelnjihia@gmail.com";
+        const to = "kavunyefransisca@gmail.com";
         console.log(to, "To");
 
         // Create a transporter
@@ -25,7 +25,7 @@ export const sendMessage = async({fullName, phoneNumber, day, time, Message}) =>
 // Email options
 const mailOptions = {
     from: EMAIL,
-    to: 'ishmaelnjihia@gmail.com',
+    to: to,
 
     // to: 'kavunyefransisca@gmail.com',
     subject: 'New Booking from Your Website',
